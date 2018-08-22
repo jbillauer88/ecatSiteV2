@@ -17,6 +17,16 @@
   </div>
 
   <div class="field">
+    <%= form.label :audioFile %>
+    <%= form.file_field :audioFile %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
     <%= form.label :sampled %>
     <%= form.datetime_select :sampled %>
   </div>

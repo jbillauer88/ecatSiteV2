@@ -11,6 +11,16 @@
 </p>
 
 <p>
+  <strong>Sample File:</strong>
+  <%= link_to 'View File', @sample.audioFile, target: :_blank %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@sample.image, style: 'width: 400px') %>
+</p>
+
+<p>
   <strong>Latitude:</strong>
   <%= @sample.latitude %>
 </p>

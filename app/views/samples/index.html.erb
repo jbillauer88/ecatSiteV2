@@ -7,6 +7,8 @@
     <tr>
       <th>Name</th>
       <th>Sampled</th>
+      <th>Sample</th>
+      <th>Image</th>
       <th>Latitude</th>
       <th>Longitude</th>
       <th>Temperature</th>
@@ -23,6 +25,8 @@
       <tr>
         <td><%= sample.name %></td>
         <td><%= sample.sampled %></td>
+        <td><%= link_to 'View File', sample.audioFile, target: :_blank %></td>
+        <td><%= image_tag(sample.image, style: 'width: 200px') %></td>
         <td><%= sample.latitude %></td>
         <td><%= sample.longitude %></td>
         <td><%= sample.temperature %></td>
