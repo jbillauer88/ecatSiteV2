@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sample.name %>
+</p>
+
+<p>
+  <strong>Sampled:</strong>
+  <%= @sample.sampled %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @sample.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @sample.longitude %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @sample.temperature %>
+</p>
+
+<p>
+  <strong>Altitude:</strong>
+  <%= @sample.altitude %>
+</p>
+
+<p>
+  <strong>Gain:</strong>
+  <%= @sample.gain %>
+</p>
+
+<p>
+  <strong>Recdevice:</strong>
+  <%= @sample.recDevice %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @sample.notes %>
+</p>
+
+<%= link_to 'Edit', edit_sample_path(@sample) %> |
+<%= link_to 'Back', samples_path %>
