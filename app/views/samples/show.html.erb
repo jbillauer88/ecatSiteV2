@@ -45,5 +45,7 @@
   <%= @sample.notes %>
 </p>
 
-<%= link_to 'Edit', edit_sample_path(@sample) %> |
+<% if @sample.user == current_user %>
+  <%= link_to 'Edit', edit_sample_path(@sample) %> |
+<% end %>
 <%= link_to 'Back', samples_path %>

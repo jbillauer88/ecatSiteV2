@@ -1,5 +1,6 @@
 class SamplesController < ApplicationController
   before_action :set_sample, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /samples
   # GET /samples.json
@@ -14,7 +15,7 @@ class SamplesController < ApplicationController
 
   # GET /samples/new
   def new
-    @sample = Sample.new
+    @sample = current_user.samples.build
   end
 
   # GET /samples/1/edit
@@ -24,7 +25,7 @@ class SamplesController < ApplicationController
   # POST /samples
   # POST /samples.json
   def create
-    @sample = Sample.new(sample_params)
+    @sample = current_user.samples.build(sample_params)
 
     respond_to do |format|
       if @sample.save
