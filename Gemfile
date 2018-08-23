@@ -38,6 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # User added rubygems
 gem 'devise', '~> 4.5'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'jquery-rails'
+gem 'popper_js', '~> 1.14.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
